@@ -1,29 +1,21 @@
-#include <Servo.h>
-Servo myServo;
-// Current position
-int pos = 0;
-void setup() 
+// C++ code
+//
+void setup()
 {
-  myServo.attach(9);
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(13, OUTPUT);
 }
 
-void loop() 
+void loop()
 {
-  // Sweep from 0 to 180 degrees
-  for (pos = 0; pos <= 180; pos++) 
-  {
-    myServo.write(pos);
-    // Wait for servo to reach position
-    delay(15);
-    // servos aren't instant
-    // Can adjust delay for speed 
-    // too fast = jerky, too slow = boring
-  }
-  
-  // Sweep from 180 back to 0 degrees
-  for (pos = 180; pos >= 0; pos--) 
-  {
-    myServo.write(pos);
-    delay(15);
-  }
+  digitalWrite(11, HIGH);
+  delay(5000); // Wait for 5000 millisecond(s)
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  delay(2000); // Wait for 2000 millisecond(s)
+  digitalWrite(12, LOW);
+  digitalWrite(13, HIGH);
+  delay(5000); // Wait for 5000 millisecond(s)
+  digitalWrite(13, LOW);
 }
