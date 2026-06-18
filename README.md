@@ -42,10 +42,10 @@ Each state runs for a fixed amount of time before switching.
 ## Images / Demo
 
 ### Circuit Setup
-![Circuit Diagram](circuit_diagram.png)
+![Circuit Diagram](traffic-light-circuit.png)
 
 ### Simulation Demo
-![Traffic Light Demo](images/demo.gif)
+![Traffic Light Demo](traffic-light-simulated.png)
 
 ---
 
