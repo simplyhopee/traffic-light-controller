@@ -57,4 +57,4 @@ Each state runs for a fixed amount of time before switching.
 
 ## Author
 Shamira Robinson  
-Computer Engineering Student | Robotics Enthusiast
+Computer Engineering Student | Future Robotics Engineer
